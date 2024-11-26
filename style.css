@@ -1,0 +1,101 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* My code */
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #1b1e30;
+}
+.pagebody {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+
+  background-color: blue;
+}
+.sidebar-left {
+  background-image: url(./images/sasha-matveeva-eIQP7yl_C-A-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: auto;
+}
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.sidebar-right > * {
+  display: inline-block;
+  flex-grow: 1;
+  width: 100%;
+}
+.top-section {
+}
+.middle-section {
+  background-color: #ddd;
+}
+.bottom-section {
+}
