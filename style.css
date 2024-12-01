@@ -62,40 +62,6 @@ h6 {
 }
 
 /* My code */
-
-body {
-  display: flex;
-  justify-content: center;
-  background-color: #1b1e30;
-}
-.pagebody {
-  display: flex;
-  width: 80%;
-  height: 100vh;
-
-  background-color: blue;
-}
-.sidebar-left {
-  background-image: url(./images/sasha-matveeva-eIQP7yl_C-A-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: auto;
-}
-.sidebar-right {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.sidebar-right > * {
-  display: inline-block;
-  flex-grow: 1;
-  width: 100%;
-}
-.top-section {
-}
-.middle-section {
-  background-color: #ddd;
-}
-.bottom-section {
+* {
+  background-color: #005555;
 }
