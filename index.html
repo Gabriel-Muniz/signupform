@@ -25,14 +25,16 @@
       </div>
       <div class="right-section">
         <div class="text-container">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed pariatur
-          qui rerum culpa amet facere porro recusandae quia numquam rem! Impedit
-          ipsa dicta expedita modi. Accusantium eos saepe reiciendis repellat
-          aspernatur perferendis assumenda nihil praesentium.
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to helo you realize your deepest dreams.
+          </p>
+          <br />
+          <p>You <span>know</span> you want to.</p>
         </div>
         <div class="form-container">
           <h2>Let's do this!</h2>
-          <form action="" method="get">
+          <form action="" method="get" id="form-signup">
             <div class="form-row">
               <div class="form-field">
                 <label for="inFirstname">FIRST NAME</label>
@@ -48,7 +50,7 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="inEmail">EMAIL</label>
-                <input type="email" name="inEmail" id="inEmail" />
+                <input type="email" name="inEmail" id="inEmail" required />
               </div>
               <div class="form-field">
                 <label for="inPhone">PHONE NUMBER</label>
@@ -58,7 +60,12 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="inPassword">PASSWORD</label>
-                <input type="password" name="inPassword" id="inPassword" />
+                <input
+                  type="password"
+                  name="inPassword"
+                  id="inPassword"
+                  required
+                />
               </div>
 
               <div class="form-field">
@@ -67,13 +74,16 @@
                   type="password"
                   name="inConfirmPassword"
                   id="inConfirmPassword"
+                  required
                 />
               </div>
             </div>
           </form>
         </div>
         <div class="btn-container">
-          <button type="submit">Create Account</button>
+          <button type="submit" form="form-signup" value="Submit">
+            Create Account
+          </button>
           <p>
             Already have an account? <span><a href="#">Log in</a></span>
           </p>

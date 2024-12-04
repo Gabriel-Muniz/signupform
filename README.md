@@ -6,4 +6,6 @@ Photo by <a href="https://unsplash.com/@sashamatveeva?utm_content=creditCopyText
 
 # to-do
 
--Arrumar espaçamento
+-Validar apenas após interação com usuário.
+-Adicionar ícones (?)
+-Dicas embaixo dos inputs

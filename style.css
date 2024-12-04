@@ -75,7 +75,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(109, 68, 34);
+  background-color: rgb(63, 55, 31);
 }
 
 .body {
@@ -86,7 +86,6 @@ body {
   background-color: #1d1748;
 }
 .left-section {
-  background-color: greenyellow;
   height: inherit;
   min-width: 40%;
 }
@@ -94,7 +93,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: yellow;
   width: 100%;
   height: inherit;
 }
@@ -116,13 +114,14 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #e2bfa2;
   height: 35%;
   flex-grow: 0;
 }
 .btn-container,
 .text-container {
-  background-color: gray;
+  background-color: rgb(58, 41, 6);
+  color: wheat;
   flex-grow: 1;
 }
 h2 {
@@ -138,27 +137,6 @@ h2 {
 
   margin-right: 4em;
 }
-
-button {
-  width: 250px;
-  height: 50px;
-  margin-bottom: 1.5em;
-  font-size: 20px;
-
-  border: none;
-  border-radius: 6px;
-}
-.btn-container > p {
-  font-size: 22px;
-}
-p > span {
-  font-weight: bold;
-}
-a {
-  color: #000; /* cor do link mudar */
-  text-decoration: none;
-}
-
 /* LEFT-SECTION */
 
 .left-section {
@@ -198,7 +176,53 @@ a {
   text-decoration: underline;
 }
 /* FORM */
+label {
+}
 input {
   height: 2em;
-  border: 1px solid #000;
+  border: 1px solid rgb(58, 41, 6);
+  border-radius: 4px;
+  background-color: #f0dfd0;
+  padding: 0 1em;
+}
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  border: 2px;
+}
+input:valid {
+  border: 1px solid #acce55;
+}
+input:invalid {
+  border: 1px solid #fa113d;
+}
+/* BUTTON-SECTION */
+button {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 1.5em;
+  font-size: 20px;
+
+  border: none;
+  border-radius: 6px;
+  color: #e2bfa2;
+  font-weight: bold;
+
+  background-color: #6d4422;
+
+  cursor: pointer;
+  transition: all 50ms;
+}
+button:hover {
+  transform: scale(1.05);
+}
+.btn-container > p {
+  font-size: 22px;
+}
+p > span {
+  font-weight: bold;
+}
+a {
+  color: #c47e45; /* cor do link mudar */
+  text-decoration: none;
 }
