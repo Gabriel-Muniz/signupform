@@ -75,7 +75,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(63, 55, 31);
+  background-color: #4b8178;
 }
 
 .body {
@@ -114,14 +114,14 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
-  background-color: #e2bfa2;
+  background-color: #6b5633;
   height: 35%;
   flex-grow: 0;
 }
 .btn-container,
 .text-container {
   background-color: rgb(58, 41, 6);
-  color: wheat;
+  color: #ffedcb;
   flex-grow: 1;
 }
 h2 {
@@ -176,13 +176,11 @@ h2 {
   text-decoration: underline;
 }
 /* FORM */
-label {
-}
 input {
   height: 2em;
   border: 1px solid rgb(58, 41, 6);
   border-radius: 4px;
-  background-color: #f0dfd0;
+  background-color: #ffedcb;
   padding: 0 1em;
 }
 input:focus {
@@ -190,12 +188,19 @@ input:focus {
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   border: 2px;
 }
-input:valid {
-  border: 1px solid #acce55;
+input:user-valid {
+  border: 2px solid #61b590;
 }
-input:invalid {
-  border: 1px solid #fa113d;
+input:user-invalid {
+  border: 2px solid #fa113d;
 }
+
+.field-tip {
+  color: #fa113d;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /* BUTTON-SECTION */
 button {
   width: 250px;
