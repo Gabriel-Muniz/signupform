@@ -1,0 +1,576 @@
+@font-face {
+    font-family: 'PathwayExtremeBlack';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/096963365f7b72cb665e5fa19718b2fa/PathwayExtremeBlack.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBlackCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/8b167c01e5295dd4ce6c3c1a78f6d54b/PathwayExtremeBlackCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBlackCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/a2a359a86304e34168bd2c50a4f4c255/PathwayExtremeBlackCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBlackItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/49713d13232052ae2eb3c3b3635e8f3b/PathwayExtremeBlackItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBold';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/6548664f83b783351bc1294aed0fa8bd/PathwayExtremeBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBoldCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/b5ef6f6925b8567388291e937a04f6c2/PathwayExtremeBoldCondensed.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBoldCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/a1889644a3fad80ce714acaa8a8cfe39/PathwayExtremeBoldCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeBoldItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/69fd939a4a6e4841dc15d5e45cbd0e9a/PathwayExtremeBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/e076cb41600cca75f01aa83eeab66c2d/PathwayExtremeCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/aeb9ba77a4acfdd9af65bd44b02cca08/PathwayExtremeCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraBold';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/46779f3f9e0503687bbaa1546794002a/PathwayExtremeExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraBoldCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/e803040ad8472df7e74adf42a34d8e03/PathwayExtremeExtraBoldCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraBoldCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/3e76022b77930b2b1379579b35a7a3fa/PathwayExtremeExtraBoldCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraBoldItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/770b732b58562771c6f07a544478913d/PathwayExtremeExtraBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraLight';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/716b3e27fbadfc3f5dc1889aa02ed0f1/PathwayExtremeExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraLightCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/99fb9af1dd9a53a9b78907dcc39ab246/PathwayExtremeExtraLightCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraLightCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/c074f20ebea54a8e4707c1211f1110f7/PathwayExtremeExtraLightCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeExtraLightItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/a0cc75747a5aef56d7f37158c89826d0/PathwayExtremeExtraLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/58645920530da0b06faae169656ec14a/PathwayExtremeItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeLight';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/5e4342be8248cb3c510ef00746f973e6/PathwayExtremeLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeLightCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/09cf7adeec224ccfddb419d7e7902ac7/PathwayExtremeLightCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeLightItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/f76fc097776fae434b812eb1809ea1cf/PathwayExtremeLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeLigthCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/b2077993274e9032ba782e37be00f707/PathwayExtremeLigthCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeMedium';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/9c786527acf23dec79ac326c7259f3c6/PathwayExtremeMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeMediumCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2bd0f9a1fecab2a21f70081016c07c83/PathwayExtremeMediumCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeMediumCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/41376fe5c8bff315ff16593da7ecfe61/PathwayExtremeMediumCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeMediumItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/bc6e3af23ebf4de98e80c2ba501a3e6a/PathwayExtremeMediumItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeRegular';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2f9e72a91989a8bb7393ef1e7c8c43ad/PathwayExtremeRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeSemiBold';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/d2b2f7ca06f854e2c32899c769c7edc9/PathwayExtremeSemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeSemiBoldCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/41052b828dba7057dc998a0b83b0dc52/PathwayExtremeSemiBoldCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeSemiBoldCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2447b53ba6108071b1184e37880965ae/PathwayExtremeSemiBoldCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeSemiBoldItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/6bf2ed0071ed68016485b942f67e4b51/PathwayExtremeSemiBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeThin';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/9fddae880572c4fb5d162f1fd2dd24dd/PathwayExtremeThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeThinCondensed';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2e7478d76d5f4f3378709a5e8e4fa2c8/PathwayExtremeThinCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeThinCondensedItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/3c265ea5b421f4dc303211422f761948/PathwayExtremeThinCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'PathwayExtremeThinItalic';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/15325663bcff1e29876544582b8b8289/PathwayExtremeThinItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+ /* The following rules are deprecated. */ 
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/096963365f7b72cb665e5fa19718b2fa/PathwayExtremeBlack.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/8b167c01e5295dd4ce6c3c1a78f6d54b/PathwayExtremeBlackCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/a2a359a86304e34168bd2c50a4f4c255/PathwayExtremeBlackCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/49713d13232052ae2eb3c3b3635e8f3b/PathwayExtremeBlackItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/6548664f83b783351bc1294aed0fa8bd/PathwayExtremeBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/b5ef6f6925b8567388291e937a04f6c2/PathwayExtremeBoldCondensed.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/a1889644a3fad80ce714acaa8a8cfe39/PathwayExtremeBoldCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/69fd939a4a6e4841dc15d5e45cbd0e9a/PathwayExtremeBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/e076cb41600cca75f01aa83eeab66c2d/PathwayExtremeCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/aeb9ba77a4acfdd9af65bd44b02cca08/PathwayExtremeCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/46779f3f9e0503687bbaa1546794002a/PathwayExtremeExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/e803040ad8472df7e74adf42a34d8e03/PathwayExtremeExtraBoldCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/3e76022b77930b2b1379579b35a7a3fa/PathwayExtremeExtraBoldCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/770b732b58562771c6f07a544478913d/PathwayExtremeExtraBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/716b3e27fbadfc3f5dc1889aa02ed0f1/PathwayExtremeExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/99fb9af1dd9a53a9b78907dcc39ab246/PathwayExtremeExtraLightCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/c074f20ebea54a8e4707c1211f1110f7/PathwayExtremeExtraLightCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/a0cc75747a5aef56d7f37158c89826d0/PathwayExtremeExtraLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/58645920530da0b06faae169656ec14a/PathwayExtremeItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/5e4342be8248cb3c510ef00746f973e6/PathwayExtremeLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/09cf7adeec224ccfddb419d7e7902ac7/PathwayExtremeLightCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/f76fc097776fae434b812eb1809ea1cf/PathwayExtremeLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/b2077993274e9032ba782e37be00f707/PathwayExtremeLigthCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/9c786527acf23dec79ac326c7259f3c6/PathwayExtremeMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2bd0f9a1fecab2a21f70081016c07c83/PathwayExtremeMediumCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/41376fe5c8bff315ff16593da7ecfe61/PathwayExtremeMediumCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/bc6e3af23ebf4de98e80c2ba501a3e6a/PathwayExtremeMediumItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2f9e72a91989a8bb7393ef1e7c8c43ad/PathwayExtremeRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/d2b2f7ca06f854e2c32899c769c7edc9/PathwayExtremeSemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/41052b828dba7057dc998a0b83b0dc52/PathwayExtremeSemiBoldCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2447b53ba6108071b1184e37880965ae/PathwayExtremeSemiBoldCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/6bf2ed0071ed68016485b942f67e4b51/PathwayExtremeSemiBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/9fddae880572c4fb5d162f1fd2dd24dd/PathwayExtremeThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/2e7478d76d5f4f3378709a5e8e4fa2c8/PathwayExtremeThinCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/3c265ea5b421f4dc303211422f761948/PathwayExtremeThinCondensedItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'Pathway Extreme';
+        src: url('/assets/fonts/pathway-extreme/eadc5d85529507cbe48689fa4f6439e1/15325663bcff1e29876544582b8b8289/PathwayExtremeThinItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+      }
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://127.0.0.1:5500/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" media="screen" href="./Sign-up form_files/pathway-extreme" type="text/css">
+    <link rel="stylesheet" href="./Sign-up form_files/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo-section">XÔD</div>
+
+            <span class="photo-credits">
+                Photo by <a href="https://unsplash.com/@ivvndiaz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Iván
+                    Díaz</a> on <a href="https://unsplash.com/photos/koi-fish-swimming-in-dark-water-8e8t4hCUKpM?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+            </span>
+        </div>
+        <div class="right-section">
+            <div class="about-form">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.
+                </p>
+                <p>
+                    Sign up <span class="italic">now</span> to get started.
+                </p>
+
+                <p class="slogan-phrase">You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-container">
+                <form id="sign-up-form">
+                    <h1>Let's do this!</h1>
+
+                    <div class="form-row">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Arthur" pattern="[^-\s]" required="">
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Morgan">
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="john@example.com" required="">
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="text" inputmode="numeric" placeholder="(XX) 9XXXX-XXXX">
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" name="pwd" id="pwd" minlength="8" maxlength="32" required="">
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-pwd" id="confirm-pwd" minlength="8" maxlength="32" required="">
+                        <span></span>
+                    </div>
+                </form>
+            </div>
+            <div class="action-section">
+                <button class="btn-submit" type="submit" form="sign-up-form">
+                    Create Account
+                </button>
+
+                <p class="log-in-callout">
+                    Already have an account? <a class="log-in" href="http://127.0.0.1:5500/#">Log in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

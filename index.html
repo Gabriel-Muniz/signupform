@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pathway-extreme" type="text/css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,43 +26,60 @@
                 <p>This is not a real online service! You know you need something like this in your life to help you
                     realize your deepest dreams.
                 </p>
-                <p> Sign up now to get started.
+                <p>
+                    Sign up <span class="italic">now</span> to get started.
                 </p>
+
+                <p class="slogan-phrase">You <em>know</em> you want to.</p>
             </div>
             <div class="form-container">
                 <form id="sign-up-form">
                     <h1>Let's do this!</h1>
 
                     <div class="form-row">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" />
-
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" />
+                        <label for="first-name">FIRST NAME<span></span></label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Arthur" pattern="[^-\s]" required/>
+                        <span></span>
                     </div>
-                    <div class="form-row">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" />
 
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="text" inputmode="numeric" />
+                    <div class="form-row">
+                        <label for="last-name">LAST NAME<span></span></label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Morgan" required/>
+                        <span></span>
                     </div>
-                    <div class="form-row">
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" name="pwd" id="pwd" />
 
-                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-pwd" id="confirm-pwd" />
+                    <div class="form-row">
+                        <label for="email">EMAIL<span></span></label>
+                        <input type="email" name="email" id="email" placeholder="john@example.com" required/>
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone_number">PHONE NUMBER<span></span></label>
+                        <input type="text" inputmode="numeric" placeholder="(XX) 9XXXX-XXXX" />
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="pwd">PASSWORD<span></span></label>
+                        <input type="password" name="pwd" id="pwd" placeholder="Password" pattern=".{8,12}" required />
+                        <span></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="confirm-pwd">CONFIRM PASSWORD<span></span></label>
+                        <input type="password" name="confirm-pwd" placeholder="Confirm password" pattern=".{8,12}" id="confirm-pwd" required />
+                        <span></span>
                     </div>
                 </form>
             </div>
             <div class="action-section">
-                <button type="submit" form="sign-up-form">
+                <button class="btn-submit" type="submit" form="sign-up-form">
                     Create Account
                 </button>
 
-                <p>
-                    Already have an account? <a href="#">Log in</a>
+                <p class="log-in-callout">
+                    Already have an account? <a class="log-in" href="#">Log in</a>
                 </p>
             </div>
         </div>

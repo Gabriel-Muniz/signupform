@@ -77,12 +77,7 @@ h6 {
 :root {
     --primary-color: rgb(2, 38, 44);
     --secondary-color: rgb(8, 101, 117);
-    --accent-color: rgb(31, 117, 216); 
-
     --soft-shadow: 3px 3px 5px #00000050;
-
-    --alert-color: rgb(182, 2, 56);
-    --success-color: rgb(6, 121, 86);
 }
 
 .container {
@@ -206,6 +201,7 @@ form>h1 {
     width: 350px;
     position: absolute;
     left: 0;
+    color: red;
 }
 
 label,
@@ -272,9 +268,12 @@ input {
 
 /* INPUT VALIDATION */
 
-input+span::before {
+input:required + span::before {
     padding: 3px 8px;
-    border-radius: 2px;
+    background-color: rgb(153, 69, 0);
+    border-radius: 1px;
+
+    content: 'required';
 
     position: absolute;
     top: -32px;
@@ -284,22 +283,36 @@ input+span::before {
     color: white;
 }
 
-input:required+span::before {
-    background-color: rgb(153, 69, 0);
-    content: 'required';
-}
+input:not(:required) + span::before {
+    padding: 3px 8px;
+    background-color: rgb(174, 184, 178);
+    border-radius: 1px;
 
-input:not(:required)+span::before {
-    background-color: var(--secondary-color);
-    opacity: 0.4;
     content: 'optional';
+
+    position: absolute;
+    top: -32px;
+    right: 50px;
+
+    font-weight: bold;
+    color: white;
 }
 
-label:has(+ input[type='password'])>span:before {
-    content: "Between 8 and 12 characters";
+input:user-valid+span::after{
+    content: '\2714';
+
+    font-size: 30px;
+
+    position: absolute;
+    right: 20px;
+    top: -3px;
+
+    color: green;
 }
 
-input+span:after {
+input:user-invalid+span::after {
+    content: "\2715";
+
     font-size: 30px;
 
     position: absolute;
@@ -307,57 +320,21 @@ input+span:after {
     top: -3px;
 }
 
-input:user-valid+span::after {
-    content: '\2714';
-
-    color: var( --success-color )
+input[type='text']:user-invalid,
+input[type='password']:user-invalid {
+    border: 2px solid red;
 }
 
-input:user-invalid+span::after {
-    content: "\2715";
-
-    color: var( --alert-color )
+input:user-invalid{
+    border: 2px solid red
 }
 
-input:user-invalid {
-    border: 2px solid var(--alert-color);
-}
-
-input:user-valid {
-    border: 2px solid var(--success-color);
-}
-
-label:has(+ input)>span:before {
-    /* Select spans that are used to input filling feedback */
-    position: absolute;
-    bottom: -22px;
-    left: 0;
-
-    font-size: 0.9em;
-}
-
-label:has(+ input:required:user-invalid:placeholder-shown)>span:before {
-    content: 'This field is required.';
-
-    color: var( --alert-color )
-}
-
-label:has(+ input[type='email']:not(:placeholder-shown):user-invalid)>span:before {
-    content: 'Please insert a valid e-mail.';
-
-    color: var( --alert-color )
-}
-
-label:has(+ input[type='password']:user-invalid:not(:placeholder-shown))>span:before {
-    color: var( --alert-color )
-}
-
-label:has(+ input[type='password']:user-valid:not(:placeholder-shown))>span:before {
-    color: var( --success-color )
+input:user-valid{
+    border: 2px solid green;
 }
 
 input:focus {
     outline: none;
     box-shadow: var(--soft-shadow);
-    border: 2px solid var(--accent-color);
+    border: 3px solid var(--secondary-color);
 }
