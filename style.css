@@ -81,7 +81,8 @@ h6 {
     --secondary-color: rgb(8, 101, 117);
     --accent-color: rgb(31, 117, 216);
 
-    --soft-shadow: 3px 3px 5px #00000050;
+    --soft-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    --medium-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
 
     --alert-color: rgb(182, 2, 56);
     --success-color: rgb(6, 121, 86);
@@ -261,8 +262,12 @@ input {
     background-color: var(--primary-color);
 }
 
-.btn-submit:hover {
+.btn-submit:hover,
+.btn-submit:focus {
     background-color: var(--secondary-color);
+
+    box-shadow: var(--medium-shadow);
+    transform: scale(1.03);
 }
 
 .log-in {
